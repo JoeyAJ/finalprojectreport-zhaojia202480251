@@ -405,6 +405,7 @@
                 <li><a href="#section4" class="nav-link">IV. 데이터</a></li>
                 <li><a href="#section5" class="nav-link">V. 분석방법</a></li>
                 <li><a href="#section6" class="nav-link">VI. 예비분석</a></li>
+                <li><a href="#conclusion" class="nav-link">결론</a></li>
                 <li><a href="#references" class="nav-link">참고문헌</a></li>
             </ul>
         </nav>
@@ -1314,6 +1315,158 @@ F1 = 2·P·R/(P+R)
                             <td colspan="2">9-11개월</td>
                         </tr>
                     </table>
+                </div>
+            </section>
+
+            <!-- 결론 Section -->
+            <section id="conclusion" class="section">
+                <h2 class="section-title">결론</h2>
+
+                <div class="subsection">
+                    <h3>8.1 연구의 기대효과 및 기여</h3>
+                    
+                    <div class="card">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">학문적 기여</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>이론적 확장:</strong> 머신러닝 기법을 ETF 투자전략에 적용함으로써 전통적 금융이론(효율적 시장가설, Fama-French 모형)과 현대 머신러닝 기법의 통합 가능성을 탐색합니다.</li>
+                            <li><strong>방법론적 혁신:</strong> 다양한 머신러닝 모델(Random Forest, XGBoost, LSTM)을 체계적으로 비교하고, 한국 ETF 시장에 최적화된 특징 엔지니어링 방법을 제시합니다.</li>
+                            <li><strong>실증 연구 확대:</strong> KOSPI200 ETF를 대상으로 한 실증 분석을 통해 한국 시장의 특수성과 머신러닝 모델의 적용 가능성을 검증합니다.</li>
+                            <li><strong>투자전략 이론 발전:</strong> 분할매매 전략의 이론적 근거를 제시하고, 머신러닝 기반 동적 자산배분 전략의 유효성을 입증합니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">실무적 기여</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>투자 의사결정 지원:</strong> 개인 투자자와 기관 투자자에게 데이터 기반의 체계적인 투자전략 프레임워크를 제공합니다.</li>
+                            <li><strong>리스크 관리 개선:</strong> 머신러닝 기반 예측을 통해 시장 변동성에 대한 사전 대응이 가능하며, 손실 위험을 효과적으로 관리할 수 있습니다.</li>
+                            <li><strong>ETF 시장 발전:</strong> 한국 ETF 시장의 효율성 제고와 투자 활성화에 기여하며, ETF를 활용한 다양한 투자전략 개발의 기반을 마련합니다.</li>
+                            <li><strong>자동화 투자 시스템:</strong> 연구 결과를 바탕으로 로보어드바이저 및 자동화 트레이딩 시스템 개발에 활용 가능합니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">정책적 시사점</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>시장 효율성:</strong> 머신러닝 기술의 발전이 금융시장의 효율성에 미치는 영향을 평가하고, 규제 당국의 정책 수립에 참고자료를 제공합니다.</li>
+                            <li><strong>투자자 보호:</strong> 알고리즘 트레이딩의 투명성과 공정성 확보를 위한 기초 자료로 활용될 수 있습니다.</li>
+                            <li><strong>금융 혁신:</strong> 핀테크와 금융 AI 기술 발전을 위한 학술적 기반을 제공합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>8.2 연구의 한계점</h3>
+                    
+                    <div class="card" style="border-left-color: #e74c3c;">
+                        <h4 style="color: #e74c3c; margin-bottom: 15px;">데이터 관련 한계</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>표본 크기:</strong> 월간 데이터 특성상 표본 크기가 제한적이며(약 200개월), 이는 딥러닝 모델 학습에 제약이 될 수 있습니다.</li>
+                            <li><strong>데이터 범위:</strong> KOSPI200 ETF에 국한된 분석으로, 다른 자산군이나 글로벌 시장으로의 일반화에는 한계가 있습니다.</li>
+                            <li><strong>생존편향:</strong> 현재 거래 가능한 ETF만을 대상으로 하여 상장폐지된 ETF는 분석에서 제외되는 생존편향(survivorship bias)이 존재할 수 있습니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="border-left-color: #e74c3c;">
+                        <h4 style="color: #e74c3c; margin-bottom: 15px;">방법론적 한계</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>모델 복잡도:</strong> 딥러닝 모델의 블랙박스 특성으로 인해 예측 결과의 해석이 어려울 수 있습니다.</li>
+                            <li><strong>과적합 위험:</strong> 하이퍼파라미터 최적화 과정에서 과거 데이터에 과도하게 적합(overfitting)될 위험이 있습니다.</li>
+                            <li><strong>거래비용 미반영:</strong> 실제 투자에서 발생하는 거래비용, 슬리피지, 세금 등이 완전히 반영되지 않았습니다.</li>
+                            <li><strong>시장 미시구조:</strong> 시장 유동성, 호가 스프레드 등 미시적 시장 구조가 고려되지 않았습니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="border-left-color: #e74c3c;">
+                        <h4 style="color: #e74c3c; margin-bottom: 15px;">외부 요인 관련 한계</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>구조적 변화:</strong> 시장의 구조적 변화(제도 개편, 위기 상황)가 모델 성능에 미치는 영향을 완전히 반영하기 어렵습니다.</li>
+                            <li><strong>비정형 데이터:</strong> 뉴스, 소셜미디어 등 비정형 데이터와 투자 심리 지표는 연구 범위에서 제외되었습니다.</li>
+                            <li><strong>글로벌 요인:</strong> 환율, 국제 금리, 지정학적 리스크 등 글로벌 거시경제 변수가 충분히 고려되지 않았습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>8.3 향후 연구방향</h3>
+                    
+                    <div class="card">
+                        <h4 style="color: #27ae60; margin-bottom: 15px;">1. 데이터 확장 연구</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>다양한 자산군 확대:</strong> 섹터 ETF, 채권 ETF, 원자재 ETF 등으로 연구 대상을 확장하여 전략의 범용성을 검증</li>
+                            <li><strong>고빈도 데이터 활용:</strong> 일간 또는 분 단위 고빈도 데이터를 활용한 단기 투자전략 연구</li>
+                            <li><strong>대체 데이터 통합:</strong> 위성 이미지, 신용카드 거래 데이터 등 대체 데이터(alternative data)를 활용한 예측 모델 개발</li>
+                            <li><strong>글로벌 시장 비교:</strong> 미국, 중국, 유럽 등 주요 시장의 ETF 데이터를 활용한 국제 비교 연구</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4 style="color: #27ae60; margin-bottom: 15px;">2. 방법론 고도화</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>앙상블 학습:</strong> 여러 머신러닝 모델을 결합한 스태킹(stacking) 및 블렌딩(blending) 기법 적용</li>
+                            <li><strong>강화학습 적용:</strong> DQN, PPO 등 강화학습 알고리즘을 활용한 동적 포트폴리오 최적화</li>
+                            <li><strong>설명 가능한 AI:</strong> SHAP, LIME 등을 활용하여 모델 예측의 해석가능성 향상</li>
+                            <li><strong>온라인 학습:</strong> 실시간으로 모델을 업데이트하는 온라인 학습(online learning) 프레임워크 개발</li>
+                            <li><strong>트랜스포머 모델:</strong> 금융 시계열에 최적화된 Transformer 기반 모델(Temporal Fusion Transformer) 적용</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4 style="color: #27ae60; margin-bottom: 15px;">3. 비정형 데이터 통합</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>뉴스 감성 분석:</strong> 자연어처리(NLP)를 활용한 뉴스 및 공시 자료의 감성 분석</li>
+                            <li><strong>소셜미디어 분석:</strong> 트위터, 레딧 등 소셜미디어 데이터를 활용한 투자자 심리 지표 개발</li>
+                            <li><strong>멀티모달 학습:</strong> 텍스트, 숫자, 이미지 등 다양한 형태의 데이터를 통합하는 멀티모달 딥러닝 모델 구축</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4 style="color: #27ae60; margin-bottom: 15px;">4. 실전 투자 시스템 구축</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>자동매매 시스템:</strong> API 연동을 통한 실시간 자동매매 시스템 개발 및 백테스팅</li>
+                            <li><strong>리스크 관리 강화:</strong> VaR, CVaR 등 고급 리스크 지표를 통합한 포트폴리오 관리 시스템</li>
+                            <li><strong>거래비용 최적화:</strong> 실제 거래비용을 고려한 최적 주문 실행 전략(optimal execution strategy) 연구</li>
+                            <li><strong>성과 모니터링:</strong> 실시간 성과 추적 및 모델 재학습 트리거 시스템 구축</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4 style="color: #27ae60; margin-bottom: 15px;">5. 시장 구조 연구</h4>
+                        <ul style="line-height: 2; margin-left: 20px;">
+                            <li><strong>체제전환 모델:</strong> Markov Switching Model을 활용한 시장 체제 변화 탐지 및 전략 조정</li>
+                            <li><strong>유동성 분석:</strong> ETF 유동성이 전략 수익성에 미치는 영향 연구</li>
+                            <li><strong>시장 효율성:</strong> 머신러닝 전략의 확산이 시장 효율성에 미치는 영향 분석</li>
+                            <li><strong>알고리즘 간 상호작용:</strong> 다수의 알고리즘 트레이더가 공존하는 시장 환경의 균형 분석</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>8.4 최종 결언</h3>
+                    <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">
+                        <p style="font-size: 1.1em; line-height: 2; margin-bottom: 15px;">
+                            본 연구는 머신러닝 기술을 활용하여 KOSPI200 ETF의 월간 투자전략을 개발하고자 하는 시도입니다. 
+                            전통적인 금융이론과 최신 머신러닝 기법을 통합함으로써, 한국 ETF 시장에서 실질적으로 활용 가능한 
+                            투자전략 프레임워크를 제시하고자 합니다.
+                        </p>
+                        <p style="font-size: 1.1em; line-height: 2; margin-bottom: 15px;">
+                            특히 Random Forest, XGBoost, LSTM 등 다양한 머신러닝 모델을 체계적으로 비교하고, 
+                            분할매매 전략을 통해 리스크를 관리하면서도 안정적인 수익을 추구하는 방법론을 제안합니다. 
+                            이는 개인 투자자부터 기관 투자자까지 폭넓게 활용될 수 있는 실용적인 연구 결과를 도출할 것으로 기대됩니다.
+                        </p>
+                        <p style="font-size: 1.1em; line-height: 2; margin-bottom: 15px;">
+                            연구의 한계점도 분명히 인식하고 있습니다. 제한된 표본 크기, 거래비용의 불완전한 반영, 
+                            외부 충격에 대한 모델의 취약성 등은 향후 연구를 통해 보완되어야 할 과제입니다. 
+                            또한 비정형 데이터의 통합, 설명 가능한 AI 기법의 적용, 실시간 자동매매 시스템 구축 등 
+                            다양한 후속 연구의 필요성도 제기됩니다.
+                        </p>
+                        <p style="font-size: 1.1em; line-height: 2;">
+                            본 연구가 한국 금융시장의 디지털 전환과 AI 기반 자산운용 발전에 기여하고, 
+                            나아가 투자자들의 합리적인 의사결정을 지원하는 학문적·실무적 기반이 되기를 기대합니다. 
+                            머신러닝과 금융의 융합은 이제 시작 단계이며, 지속적인 연구와 혁신을 통해 
+                            더욱 정교하고 실용적인 투자전략이 개발될 것으로 확신합니다.
+                        </p>
+                    </div>
                 </div>
             </section>
 
